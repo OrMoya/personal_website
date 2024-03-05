@@ -1,0 +1,129 @@
+﻿@using System.IO
+@using System.Text.Json
+@using System.Text.Json.Serialization;
+@using MudBlazor.Services
+@implements IAsyncDisposable
+
+
+@*<MudText>@_current</MudText>
+<MudText>@_position</MudText>*@
+
+<MudTimeline  TimelinePosition="_position" >
+    @if(jobs == null)
+    {
+        <MudTimelineItem>
+            <MudText>Loading...</MudText>
+        </MudTimelineItem>
+    }
+    else
+    {
+        foreach(var job in jobs)
+        {
+                <MudTimelineItem Variant="Variant.Outlined" Color="job.Color" Size="Size.Small">
+                    <ItemOpposite>
+                         <MudHidden Breakpoint="Breakpoint.MdAndDown">
+                                <MudText Typo="Typo.h5" Color="job.Color" Style="font-weight: bold;" >@job.Date</MudText>
+                        </MudHidden>
+                    </ItemOpposite>
+                <ItemContent>
+
+                    <MudText Typo="Typo.h6" Color="job.Color" >@job.Company</MudText>
+                    <MudHidden Breakpoint="Breakpoint.LgAndUp">
+                        <MudText Typo="Typo.body1" Color="job.Color" Style="font-weight: bold;" >@job.Date</MudText>
+                    </MudHidden>
+
+                    <MudHidden Breakpoint="Breakpoint.MdAndDown">
+                        <MudText Typo="Typo.body1" Class="pb-1">@job.Title</MudText>
+                    </MudHidden>
+                    @foreach (var b in job.Bullets)
+                    {
+                        <MudText Typo="Typo.body1" Style="@($"color:{Theme.PaletteDark.TextSecondary}")" >@b</MudText>
+                    }
+                </ItemContent>
+                </MudTimelineItem>
+        }
+    }
+</MudTimeline>
+
+
+@code {
+    [CascadingParameter]
+    protected MudTheme Theme { get; set; }
+
+    private Job[] jobs;
+    private Education[] educations;
+    private Skill[] skills;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var jobJson = await File.ReadAllTextAsync("Data/jobs.json");
+        jobs = JsonSerializer.Deserialize<Job[]>(jobJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+        var educationJson = await File.ReadAllTextAsync("Data/Education.json");
+        educations = JsonSerializer.Deserialize<Education[]>(educationJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+        var skillJson = await File.ReadAllTextAsync("Data/skills.json");
+        skills = JsonSerializer.Deserialize<Skill[]>(skillJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+    }
+
+    public class Skill
+    {
+        public string SkillName { get; set; }
+        public int Rating { get; set; }
+    }
+    public class Education
+    {
+        public string Institution { get; set; }
+        public string Dates { get; set; }
+        public string Major { get; set; }
+    }
+    public class Job
+    {
+        public string Company { get; set; }
+        public string Title { get; set; }
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+        public MudBlazor.Color Color { get; set; }
+        public string Date { get; set; }
+        public string[] Bullets { get; set; }
+    }
+
+    private TimelinePosition _position { get; set; }
+
+    [Inject] IBreakpointService BreakpointListener { get; set; }
+
+    private List<Breakpoint> _breakpointHistory = new();
+
+    private Guid _subscriptionId;
+    private Breakpoint _start;
+    private Breakpoint _current;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var subscriptionResult = await BreakpointListener.Subscribe((breakpoint) =>
+            {
+                _breakpointHistory.Add(breakpoint);
+                _current = breakpoint;
+                InvokeAsync(StateHasChanged);
+            }, new ResizeOptions
+                {
+                    ReportRate = 250,
+                    NotifyOnBreakpointOnly = true,
+                });
+
+            _current = subscriptionResult.Breakpoint;
+            _subscriptionId = subscriptionResult.SubscriptionId;
+            StateHasChanged();
+        }
+
+        if (_current == Breakpoint.Xs || _current == Breakpoint.Md || _current == Breakpoint.Sm)
+        { _position = TimelinePosition.Left; StateHasChanged(); }
+        else if (_current == Breakpoint.Lg || _current == Breakpoint.Xl || _current == Breakpoint.Xxl)
+        { _position = TimelinePosition.Alternate; StateHasChanged(); }
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    public async ValueTask DisposeAsync() => await BreakpointListener.Unsubscribe(_subscriptionId);
+}

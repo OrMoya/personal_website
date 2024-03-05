@@ -1,0 +1,136 @@
+﻿@using System.IO
+@using System.Text.Json
+
+<h3>Time Line</h3>
+<MudCard Elevation="1">
+    <MudGrid Spacing="0" Justify="Justify.Center" Class="p-0 m-0">
+        <MudItem lg="9" xs="12" Style="width: 100%;">
+            <MudPaper Class="py-2" Outlined="true" Square="true">
+                <MudText Class="pl-2" Align="Align.Left"> <MudIcon Icon="@Icons.Outlined.Cases" Color="Color.Tertiary" /> Experience</MudText>
+            </MudPaper>
+            @if (jobs == null)
+            {
+                <p>Loading...</p>
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+            }
+            else
+            {
+                <MudTabs style="width: 100%;" Position="Position.Left" Rounded="false" Border="true"
+                     ApplyEffectsToContainer="false" Class="mt-0" PanelClass="pa-0">
+                    @foreach (var job in jobs)
+                    {
+
+                        <MudTabPanel Text="@job.Company" style="width: 100%;">
+                            <MudPaper Elevation="0" Style="width: 100%; height: 350px">
+                                <MudText Color="Color.Primary" Class="ms-3 pt-2" Typo="Typo.h6">@job.Company</MudText>
+                                <MudText Class="ms-4 pb-2" Typo="Typo.body1">@job.Title</MudText>
+                                <MudDivider></MudDivider>
+                                @foreach (var b in job.Bullets)
+                                {
+                                    <MudText Class="pl-2">
+                                        <MudIcon Icon="@Icons.Filled.KeyboardArrowRight" Color="Color.Tertiary" />  @b
+                                    </MudText>
+                                }
+                            </MudPaper>
+                        </MudTabPanel>
+                    }
+                </MudTabs>
+            }
+            <MudPaper Class="py-2" Outlined="true" Square="true">
+                <MudText Class="pl-2" Align="Align.Left"> <MudIcon Icon="@Icons.Outlined.School" Color="Color.Tertiary" /> Education</MudText>
+            </MudPaper>
+            @if (educations == null)
+            {
+                <p>Loading...</p>
+                <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+            }
+            else
+            {
+                foreach (var education in educations)
+                {
+                        <MudText Class="ms-3" Typo="Typo.h6">@education.Institution</MudText>
+                        <MudDivider></MudDivider>
+                        <MudGrid Justify="@Justify.SpaceBetween" Class="mb-3">
+                            <MudItem>
+                                <MudText Class="pl-5">
+                                    @education.Major
+                                </MudText>
+                            </MudItem>
+                            <MudItem>
+                                <MudText Class="pr-1">
+                                    @education.Dates
+                                </MudText>
+                            </MudItem>
+                        </MudGrid>
+                }
+            }
+        </MudItem>
+        <MudItem lg="3" xs="12">
+                <MudPaper Class="py-2" Outlined="true" Elevation=0 Square="true">
+                    <MudText Class="pl-2" Align="Align.Left"> <MudIcon Icon="@Icons.Filled.Computer" Color="Color.Tertiary" /> Skills</MudText>
+                </MudPaper>
+                @if (skills == null)
+                {
+                    <p>Loading... </p>
+                    <MudProgressCircular Color="Color.Primary" Indeterminate="true" />
+                }
+                else
+                {
+                    @foreach (var skill in skills)
+                    {
+                        <MudText Class="ps-2">
+                            @skill.SkillName <MudRating Size="Size.Small" Color="Color.Tertiary" ReadOnly="true" SelectedValue="@skill.Rating" />
+                        </MudText>
+                    }
+                }
+                <MudPaper Class="py-2" Outlined="true" Elevation="0" Square="true">
+                    <MudText Class="pl-2" Align="Align.Left"> <MudIcon Icon="@Icons.Filled.Phone" Color="Color.Tertiary" /> Contact Information</MudText>
+                </MudPaper>
+                <MudText>
+                    Phone: (909) 544-1364
+                    Email: OrlandoMoyaRodriguez@gmail.com
+                    Linkedin: linkedin.com/in/orlandomoya/
+                </MudText>
+        </MudItem>
+    </MudGrid>
+</MudCard>
+
+@code {
+    [CascadingParameter]
+    protected MudTheme Theme { get; set; }
+
+    private Job[] jobs;
+    private Education[] educations;
+    private Skill[] skills;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var jobJson = await File.ReadAllTextAsync("Data/jobs.json");
+        jobs = JsonSerializer.Deserialize<Job[]>(jobJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+        var educationJson = await File.ReadAllTextAsync("Data/Education.json");
+        educations = JsonSerializer.Deserialize<Education[]>(educationJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+        var skillJson = await File.ReadAllTextAsync("Data/skills.json");
+        skills = JsonSerializer.Deserialize<Skill[]>(skillJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+    }
+
+    public class Skill
+    {
+        public string SkillName { get; set; }
+        public int Rating{ get; set; }
+    }
+    public class Education
+    {
+        public string Institution { get; set; }
+        public string Dates { get; set; }
+        public string Major { get; set; }
+    }
+    public class Job
+    {
+        public string Company { get; set; }
+        public string Title { get; set; }
+        public string Dates { get; set; }
+        public string[] Bullets { get; set; }
+    }
+}

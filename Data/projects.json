@@ -1,0 +1,23 @@
+[
+  {
+    "projectName": "CARTMaN",
+    "Description": "2021 senior project. ROS enable robotic platform capable of performing SLAM (simultaneous localization and mapping).",
+    "Image": "Images/cartman.jpg",
+    "ImageBlur": "Images/cartman_blurry.jpg",
+    "URl": "https://github.com/OrMoya/CARTMaN"
+  },
+  {
+    "projectName": "Personal Website",
+    "Description": "Third personal website developed this time with Blazor. (2022)",
+    "Image": "Images/website.png",
+    "ImageBlur": "Images/website_blurry.jpg",
+    "URl": "https://github.com/OrMoya/website"
+  },
+  {
+    "projectName": "Company Website",
+    "Description": "Full stack app designed to simplify a companies HR needs. Fullstack projected developed in .NET enviroment.",
+    "Image": "Images/companywebsite.png",
+    "ImageBlur": "Images/companywebsite_blurry.jpg",
+    "URl": "N/A"
+  }
+]

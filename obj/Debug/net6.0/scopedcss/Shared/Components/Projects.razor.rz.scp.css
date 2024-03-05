@@ -1,0 +1,16 @@
+.blazor-card[b-u6pnxjyoec]{
+    border:30px solid red;
+}
+blazor-card[b-u6pnxjyoec] {
+    border: 30px solid red;
+}
+.mud-card[b-u6pnxjyoec] {
+    border: 30px solid red !important;
+}
+[b-u6pnxjyoec] .mud-paper {
+    border: 30px solid red !important;
+}
+[b-u6pnxjyoec] .mud-button-text {
+    color: red !important;
+}
+

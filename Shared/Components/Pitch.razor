@@ -1,0 +1,94 @@
+﻿@using System.Text.Json
+
+
+
+        @*<MudText Typo="Typo.h3" Align="Align.Center" Class="py-8">Summary</MudText>*@
+        <MudGrid Justify="Justify.Center" Spacing="2">
+            @if (elevatorPitches == null)
+            {
+
+            }
+            else
+            {
+                foreach (var elevatorPitch in elevatorPitches)
+                {
+                    <MudItem lg="4" xs="12" md="4">
+                    <MudCard Elevation="3"  Outlined="true"  Class="rounded-xl d-flex flex-column align-center justify-start pt-16" Style="height: 550px;">
+                            <div style="@($"border-radius: 50%; background-color: {Theme.Palette.Tertiary};")">
+                                <MudIcon Icon="@elevatorPitch.Icon" Color="Color.Surface" style="font-size: 3rem" Class="m-2" />
+                            </div>
+                            <MudText Typo="Typo.h5" Class="mt-2">
+                                @elevatorPitch.Title
+                            </MudText>
+                            <MudText Align="Align.Center" Typo="Typo.subtitle2" Class="p-3">
+                                @elevatorPitch.Description
+                            </MudText>
+                            <MudText Align="Align.Center" Typo="Typo.h5" Style="@($"color:{Theme.Palette.Primary}")">
+                                @elevatorPitch.Category
+                            </MudText>
+                            <MudText Align="Align.Center" Typo="Typo.subtitle2" Class="mb-5">
+                                @if (elevatorPitch.BulletsOne == null)
+                                {
+                                    <p>Loading...</p>
+                                }
+                                else
+                                {
+                                    <MudText Typo="Typo.subtitle2" Align="Align.Center">
+                                        @foreach (var bullet in elevatorPitch.BulletsOne)
+                                        {
+                                            @bullet
+                                        }
+                                    </MudText>
+                                }
+                            </MudText>
+                            <MudText Align="Align.Center" Typo="Typo.h5" Style="@($"color:{Theme.Palette.Primary}")">
+                                @elevatorPitch.CategoryTwo
+                            </MudText>
+                            <MudText Typo="Typo.subtitle2" Class="pb-5" Align="Align.Center">
+                                @if (elevatorPitch.BulletsTwo == null)
+                                {
+                                    <p>Loading...</p>
+                                }
+                                else
+                                {
+                                    @foreach (var bullet in elevatorPitch.BulletsTwo)
+                                    {
+                                        <MudText Typo="Typo.subtitle2" Align="Align.Center">@bullet</MudText>
+                                    }
+                                }
+                            </MudText>
+                        </MudCard>
+                    </MudItem>
+                }
+            }
+
+        </MudGrid>
+
+    
+
+@code {
+    private ElevatorPitch[] elevatorPitches;
+
+    [CascadingParameter]
+    MudTheme Theme { set; get; }
+
+    public class ElevatorPitch
+    {
+        public string Title { set; get; }
+        public string Icon { set; get; }
+        public string Description { set; get; }
+        public string Category { set; get; }
+        public string[] BulletsOne { set; get; }
+        public string CategoryTwo { set; get; }
+        public string[] BulletsTwo { set; get; }
+
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        var pitchJson = await File.ReadAllTextAsync("Data/pitch.json");
+        elevatorPitches = JsonSerializer.Deserialize<ElevatorPitch[]>(pitchJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+    }
+
+}

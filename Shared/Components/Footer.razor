@@ -1,0 +1,27 @@
+﻿<MudText Typo="Typo.body2" class="pt-16" Align="Align.Center" style="color: White">
+    This website is written in <a href="https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet" Class="mudblazor-link" style="@($"color:{_theme.Palette.Tertiary}")">.NET </a>
+    and <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" Class="mudblazor-link" style="@($"color:{_theme.Palette.Tertiary}")">Blazor</a>  designed with a material design inspired third party component library
+    called <a href="https://mudblazor.com/" Class="mudblazor-link" style="@($"color:{_theme.Palette.Tertiary}")">MudBlazor</a>.
+</MudText>
+<MudContainer MaxWidth="MaxWidth.Small" Class="d-flex py-3 justify-center gap-4">
+    <MudIconButton href="https://www.github.com/ormoya" Icon="@Icons.Custom.Brands.GitHub" Color="Color.Tertiary" Edge="Edge.False" Class="d-flex justify-center"></MudIconButton>
+    <MudIconButton href="https://www.linkedin.com/in/orlandomoya/" Icon="@Icons.Custom.Brands.LinkedIn" Color="Color.Tertiary" Edge="Edge.False" Class="d-flex justify-center"></MudIconButton>
+    <MudIconButton href="github.com/ormoya" Icon="@Icons.Custom.Brands.Discord" Color="Color.Tertiary" Edge="Edge.False" Class="d-flex justify-center"></MudIconButton>
+</MudContainer>
+<MudText Class="py-3" Typo="Typo.body2" Align="Align.Center" style="color: White">
+    Copyright 2022 - Orlando Moya-Rodriguez
+</MudText>
+<MudText Class="py-3" Typo="Typo.body2" Align="Align.Center" style="color: White">
+    "All those moments will be lost in time, like tears in rain."
+</MudText>
+<MudContainer MaxWidth="MaxWidth.Small" Class="justify-center">
+    <MudStack Row="true" Justify="Justify.Center" >
+        <MudIcon Icon="@Icons.Outlined.Circle" Color="Color.Tertiary"></MudIcon>
+        <MudAvatar Color="Color.Tertiary">33</MudAvatar>
+        <MudText Typo="Typo.body1" Color="Color.Tertiary">ATV</MudText>
+    </MudStack>
+</MudContainer>
+@code {
+    [CascadingParameter]
+    public MudTheme _theme { get; set; }
+}

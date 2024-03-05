@@ -1,0 +1,54 @@
+﻿[
+  {
+    "skillname": "Blazor",
+    "rating": 3
+  },
+  {
+    "skillname": "C#",
+    "rating": 3
+  },
+  {
+    "skillname": ".NET",
+    "rating": 3
+  },
+  {
+    "skillname": "C++",
+    "rating": 3
+  },
+  {
+    "skillname": "ASP.NET",
+    "rating": 2
+  },
+  {
+    "skillname": "SQL",
+    "rating": 2
+  },
+  {
+    "skillname": "CSS",
+    "rating": 2
+  },
+  {
+    "skillname": "HTML",
+    "rating": 2
+  },
+  {
+    "skillname": "MudBlazor",
+    "rating": 2
+  },
+  {
+    "skillname": "Visual Basic",
+    "rating": 2
+  },
+  {
+    "skillname": "Microsoft Access",
+    "rating": 2
+  },
+  {
+    "skillname": "Java",
+    "rating": 2
+  },
+  {
+    "skillname": "Fusion 360",
+    "rating": 2
+  }
+]

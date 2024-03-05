@@ -1,0 +1,37 @@
+﻿@using System.IO
+@using System.Text.Json
+@using System.Text.Json.Serialization;
+
+@if(skills == null)
+{
+    <MudText>Loading...</MudText>
+}
+else
+{
+    foreach (var s in skills)
+    {
+        <MudChip Color="Color.Primary" Label="true" Size="Size.Medium">@s.SkillName</MudChip>
+    }
+}
+
+@code {
+    [CascadingParameter]
+    protected MudTheme Theme { get; set; }
+
+    private Skill[] skills;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var SkillJson = await File.ReadAllTextAsync("Data/skills.json");
+        skills = JsonSerializer.Deserialize<Skill[]>(SkillJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+
+
+    }
+
+    public class Skill
+    {
+        public string SkillName { get; set; }
+        public int Rating { get; set; }
+    }
+}

@@ -1,0 +1,108 @@
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\appsettings.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Data\pitch.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.staticwebassets.runtime.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.exe
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.deps.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.runtimeconfig.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.pdb
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\MudBlazor.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.csproj.AssemblyReference.cache
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.AssemblyInfoInputs.cache
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.AssemblyInfo.cs
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.csproj.CoreCompileInputs.cache
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.RazorAssemblyInfo.cache
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.RazorAssemblyInfo.cs
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets\msbuild.MyPersonalWebsite.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets\msbuild.build.MyPersonalWebsite.props
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MyPersonalWebsite.props
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MyPersonalWebsite.props
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\bundle\MyPersonalWebsite.styles.css
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\projectbundle\MyPersonalWebsite.bundle.scp.css
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.csproj.CopyComplete
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\refint\MyPersonalWebsite.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.pdb
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.genruntimeconfig.cache
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\ref\MyPersonalWebsite.dll
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Data\projects.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\Shared\Components\Projects.razor.rz.scp.css
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Data\jobs.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Data\Education.json
+C:\Users\Orlando.Moya\Repository\FOR REFERENCE\MyPersonalWebsite\bin\Debug\net6.0\Data\skills.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\appsettings.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Data\Education.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Data\jobs.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Data\pitch.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Data\projects.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Data\skills.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.staticwebassets.runtime.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.exe
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.deps.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.runtimeconfig.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\MyPersonalWebsite.pdb
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\MudBlazor.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.csproj.AssemblyReference.cache
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.AssemblyInfoInputs.cache
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.AssemblyInfo.cs
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.csproj.CoreCompileInputs.cache
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.RazorAssemblyInfo.cache
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.RazorAssemblyInfo.cs
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets\msbuild.MyPersonalWebsite.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets\msbuild.build.MyPersonalWebsite.props
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.MyPersonalWebsite.props
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.MyPersonalWebsite.props
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\Shared\Components\Projects.razor.rz.scp.css
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\bundle\MyPersonalWebsite.styles.css
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\scopedcss\projectbundle\MyPersonalWebsite.bundle.scp.css
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.csproj.CopyComplete
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\refint\MyPersonalWebsite.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.pdb
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\MyPersonalWebsite.genruntimeconfig.cache
+C:\Users\omoya\source\repos\MyPersonalWebsite\obj\Debug\net6.0\ref\MyPersonalWebsite.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\omoya\source\repos\MyPersonalWebsite\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll

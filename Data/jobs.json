@@ -1,0 +1,47 @@
+[
+  {
+    "Company": "Parsec Automation Corp.",
+    "Title": "Software Implemention Engineer",
+    "Color": "4",
+    "Date": "June 2023",
+    "Bullets": [
+      "Developed implemenation solutions for existing software",
+      "Created .NET scripts to fit customer needs",
+      "Developed web pages in ASP.NET, HTML, CSS"
+    ]
+  },
+  {
+    "Company": "Air Industries Company",
+    "Title": "Programmer",
+    "Color": "7",
+    "Date": "April 2022",
+    "Bullets": [
+      "Developed CRUD Application in VB.NET to tracking tooling request",
+      "Created views and stored procedures in SQL to migrate legacy databases",
+      "Fixed outstanding bugs in C#, VB.NET, and VBA legacy code bases",
+      "Implemented MVC design pattern in .NET Core"
+    ]
+  },
+  {
+    "Company": "Aliquantum International",
+    "Title": "Order Entry Associate",
+    "Color": "6",
+    "Date": "November 2021",
+    "Bullets": [
+      "Developed VBA excel tools to expediate order entry",
+      "Improved order checking process by implementing excel macros",
+      "Lead in training team members in excel"
+    ]
+  },
+  {
+    "Company": "CPP Robotics Club",
+    "Title": "Requisitions Officer",
+    "Color": "5",
+    "Date": "May 2020",
+    "Bullets": [
+      "Maintained club inventory and stock",
+      "Collaborated with other engineering disciplines to develop robotics projects",
+      "Lead programming workshops and trained fellow club members"
+    ]
+  }
+]

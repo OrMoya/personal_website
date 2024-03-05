@@ -1,0 +1,41 @@
+﻿@using System.ComponentModel.DataAnnotations
+@using Services
+@inject MyPersonalWebsite.Services.IMailService MailService
+
+
+<EditForm Model="@model" OnInvalidSubmit="OnValidSubmit">
+    <DataAnnotationsValidator/>
+        <MudForm>
+            
+                <MudTextField T="string" Label="Email" Required="true" RequiredError="Email is required!" Variant="Variant.Outlined"
+                    @bind-Value="model.Email" For="@(() => model.Email)"/>
+                <MudTextField T="string" Label="Subject" Required="true" RequiredError="Subject is required!" Variant="Variant.Outlined" 
+                    @bind-Value="model.Subject" For="@(() => model.Subject)"/>
+                <MudTextField T="string" Lines="10" Label="Subject" Required="true" RequiredError="Subject is required!" Variant="Variant.Outlined" 
+                    @bind-Value="model.Body" For="@(() => model.Body)"/>
+                <MudButton Size="Size.Large" Variant="Variant.Filled" Class="my-5" Color="Color.Primary" ButtonType="ButtonType.Submit">Submit</MudButton>
+   
+        </MudForm>
+</EditForm>
+
+
+@code {
+    EmailForm model = new EmailForm();
+
+    public class EmailForm
+    {
+        [Display(Name = "Email address")]
+        [Required(ErrorMessage = "The email address is required")]
+        [EmailAddress(ErrorMessage = "Invalid Email Address")]
+        public string Email { get; set; }
+
+        public string Subject { get; set; }
+
+        public string Body { get; set; }
+    }
+
+    private async void OnValidSubmit (EditContext context)
+    {
+        await MailService.SendMailAsync("test", "test", "test");
+    }
+}

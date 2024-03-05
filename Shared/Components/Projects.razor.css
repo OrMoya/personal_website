@@ -1,0 +1,16 @@
+﻿.blazor-card{
+    border:30px solid red;
+}
+blazor-card {
+    border: 30px solid red;
+}
+.mud-card {
+    border: 30px solid red !important;
+}
+::deep .mud-paper {
+    border: 30px solid red !important;
+}
+::deep .mud-button-text {
+    color: red !important;
+}
+

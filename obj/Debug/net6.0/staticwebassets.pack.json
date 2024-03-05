@@ -1,0 +1,121 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MyPersonalWebsite.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MyPersonalWebsite.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\1Orlando.png",
+      "PackagePath": "staticwebassets\\Images\\1Orlando.png"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\Orlando.png",
+      "PackagePath": "staticwebassets\\Images\\Orlando.png"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\aic-header-v2.png",
+      "PackagePath": "staticwebassets\\Images\\aic-header-v2.png"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\cartman.jpg",
+      "PackagePath": "staticwebassets\\Images\\cartman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\cartman_blurry.jpg",
+      "PackagePath": "staticwebassets\\Images\\cartman_blurry.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\companywebsite.png",
+      "PackagePath": "staticwebassets\\Images\\companywebsite.png"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\companywebsite_blurry.jpg",
+      "PackagePath": "staticwebassets\\Images\\companywebsite_blurry.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\date.jpg",
+      "PackagePath": "staticwebassets\\Images\\date.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\me.jpg",
+      "PackagePath": "staticwebassets\\Images\\me.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\website.png",
+      "PackagePath": "staticwebassets\\Images\\website.png"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\Images\\website_blurry.jpg",
+      "PackagePath": "staticwebassets\\Images\\website_blurry.jpg"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "PackagePath": "staticwebassets\\css\\open-iconic"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\open-iconic\\README.md",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\omoya\\source\\repos\\MyPersonalWebsite\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MyPersonalWebsite.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MyPersonalWebsite.props",
+      "PackagePath": "build\\MyPersonalWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MyPersonalWebsite.props",
+      "PackagePath": "buildMultiTargeting\\MyPersonalWebsite.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MyPersonalWebsite.props",
+      "PackagePath": "buildTransitive\\MyPersonalWebsite.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

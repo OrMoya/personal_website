@@ -1,0 +1,69 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider IsDarkMode="_isDarkMode" Theme="_theme" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+
+<MudLayout>
+    <MudAppBar style="backdrop-filter:blur(30px);" Color="Color.Transparent" Elevation="0" Fixed="true" Dense="true" >
+        <MudContainer MaxWidth="MaxWidth.Large" Class="d-flex flex-roW">
+            <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Tertiary" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+                <MudText Color="Color.Tertiary" Align="Align.Center" Style="margin-top: 12px"> MOYA </MudText>
+            <MudIcon Icon="@Icons.Filled.CodeOff" Color="Color.Tertiary" Style="margin-top: 12px; margin-left: 4px"></MudIcon>
+            <MudSpacer />
+            <MudToggleIconButton @bind-Toggled="@_isDarkMode" 
+                                 Icon="@Icons.Material.Outlined.DarkMode"  Color="@Color.Dark" Title="Dark Mode" Edge="Edge.End" 
+                                 ToggledIcon="@Icons.Material.Outlined.LightMode" ToggledColor="@Color.Warning" ToggledTitle="Light Mode" />
+        </MudContainer>
+        
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" Elevation="1">
+        <MudDrawerHeader>
+            <MudText Typo="Typo.h6">MyWebsite</MudText>
+        </MudDrawerHeader>
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent>
+       @* <MudContainer MaxWidth="MaxWidth.Large" Class="my-16 pt-16">*@
+            <CascadingValue Value="_theme">
+                @Body
+                @*<MudIconButton Color="Color.Primary" Icon="@Icons.Outlined.Circle" Size="Size.Small" Edge="Edge.End">Contact Me</MudIconButton>*@
+            </CascadingValue>
+            <MudScrollToTop Class="ml-8">
+                <MudFab Color="Color.Tertiary" Icon="@Icons.Filled.ArrowCircleUp" IconColor="Color.Dark"  Class="ml-8"/>
+            </MudScrollToTop>
+        @*</MudContainer>*@
+    </MudMainContent>
+</MudLayout>
+
+@code {
+    public bool _isDarkMode { get; set; } = false;
+    bool _drawerOpen = false;
+
+    MudTheme _theme = new MudTheme()
+        {
+            Palette = new Palette()
+            {
+                Background = Colors.Grey.Lighten5,
+                AppbarBackground = Colors.Shades.White,
+                //LinesDefault = new MudBlazor.Utilities.MudColor("000000"),
+            },
+            PaletteDark = new Palette()
+            {
+                AppbarBackground = new MudBlazor.Utilities.MudColor("#1c1917"),
+                Surface = new MudBlazor.Utilities.MudColor("#1c1917"),
+                TextPrimary = new MudBlazor.Utilities.MudColor("#FFFFFF"),
+                TextSecondary = new MudBlazor.Utilities.MudColor("#88949b"),
+                Background = new MudBlazor.Utilities.MudColor("#1c1917"),
+                Info = Colors.Blue.Lighten1,
+                Warning = Colors.Amber.Accent3,
+                Success = Colors.Green.Accent3,
+                LinesDefault = new MudBlazor.Utilities.MudColor("1F2022"),
+            }
+        };
+
+    void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+}

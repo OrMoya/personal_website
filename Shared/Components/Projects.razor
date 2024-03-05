@@ -1,0 +1,70 @@
+﻿
+@using System.IO
+@using System.Text.Json
+
+
+
+    @if(projects == null)
+{
+    <p>Loading...</p>
+    <MudProgressCircular Color="Color.Primary" Indeterminate="true"/>
+}
+else
+{
+    <MudGrid Justify="Justify.Center" class="mb-16 ">
+    @for (int i = 0; i < projects.Count()  ; i++)
+    {
+            var index = i; 
+            <MudItem xs="12" lg="4">
+                <MudCard Elevation="4" Outlined="true" Class="my-class project-card" Style="@($"background-image: url({projects[index].Image}); transition: 1000ms;")">
+                    <MudPaper Style="@($"background-image: url({projects[index].ImageBlur}); height: 300px; position: relative; transition: 500ms")" Height="300" Class="d-flex align-start justify-center mud-width-full mud-paper-card flex-column project-paper">
+                                <MudCardHeader>
+                                    <CardHeaderContent>
+                                <MudText Style="@($"color:{Colors.Grey.Lighten5};")">@projects[index].ProjectName</MudText>
+                                    </CardHeaderContent>
+                                </MudCardHeader>
+                                <MudCardContent>
+                            <MudText Style="@($"color:{Colors.Grey.Lighten5};")" Typo="Typo.body2">@projects[index].Description</MudText>
+                                </MudCardContent>
+                                <MudCardActions Style="position: absolute; bottom: 10px">
+                            <MudButton Href="@projects[index].Url" type="submit" Variant="Variant.Filled" EndIcon="@Icons.Custom.Brands.GitHub" Color="Color.Primary">GITHUB</MudButton>
+                                </MudCardActions>
+                            </MudPaper>
+                           @* <MudIcon Class="m-2" Icon=@Icons.Outlined.Folder Color=Color.Primary/>
+                            <MudCardMedia Image=@projects[index].Image Height="200" />
+                            <MudCardContent>
+                                <MudText Typo="Typo.h5">@projects[index].ProjectName</MudText>
+                                <MudDivider Class="my-2"/>
+                                <MudText Typo="Typo.body2">@projects[index].Description</MudText>
+                            </MudCardContent>
+                            <MudCardActions>
+                                <MudButton Href="@projects[index].Url" type="submit" Variant="Variant.Outlined" EndIcon="@Icons.Custom.Brands.GitHub" Color="Color.Primary">GITHUB</MudButton>
+                            </MudCardActions>*@
+                        </MudCard>
+                </MudItem>
+    }
+    </MudGrid>
+}
+
+
+
+@code {
+    [CascadingParameter]
+    protected MudTheme Theme { get; set; }
+
+    private Project[] projects;
+    protected override async Task OnInitializedAsync()
+    {
+        var projectJson = await File.ReadAllTextAsync("Data/projects.json");
+        projects = JsonSerializer.Deserialize<Project[]>(projectJson, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+    }
+
+    public class Project
+    {
+        public string ProjectName { get; set; }
+        public string Url { get; set; }
+        public string Description { get; set; }
+        public string Image { get; set; }
+        public string ImageBlur { get; set; }
+    }
+}

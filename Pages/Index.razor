@@ -1,0 +1,145 @@
+﻿@page "/"
+@using MyPersonalWebsite.Shared.Components
+
+<PageTitle>Index</PageTitle>
+
+<section class="intro">
+    <MudContainer MaxWidth=_containerWidth Class="d-flex justify-center flex-column">
+        <MudGrid Justify="Justify.Center" Class="d-flex align-content-center my-16">
+            
+
+            <MudHidden Breakpoint="Breakpoint.LgAndUp">
+                        <MudItem lg="4" Class="d-flex">
+                            <MudImage Elevation="3" Src="images/Orlando.png" Alt="Picture of Orlando" Class="rounded-pill p-1" Width="300" />
+                        </MudItem>
+                    </MudHidden>
+
+            <MudItem Class="d-flex justify-content-center flex-column" lg="8" >
+                <MudText Class="pt-8" style="@($"font-weight: bold; color: {_theme.Palette.Tertiary};")" Typo="Typo.h5"> Hey, my name is </MudText>
+                <MudText Class="pt-1" style="font-weight: bold;" Typo="Typo.h3" GutterBottom="true"> Orlando Moya-Rodriguez</MudText>
+                 <MudText Class="mb-2 justify-center" style="font-weight: bold;" Typo="Typo.h6">A full stack 
+                    <MudLink Href="https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet" Typo="Typo.h6" Color="Color.Primary">.NET</MudLink> developer
+                 </MudText>
+                    
+                 <MudText Class="py-4">
+                     I've been a .NET developer for a little over a year. I have a passion for all aspects of development. Professionally I've work primarily on 
+                     backend delevopment creating business applications for resource tracking and management. I've also developed websites and applications as hobby.
+                 </MudText>
+                 
+                <MudItem Class="d-flex flex-row">
+                        <MudButton Variant="Variant.Filled" Color="Color.Primary" Size="Size.Large" FullWidth="true" Class="mr-4">RESUME</MudButton>
+                        <MudButton Variant="Variant.Outlined" Color="Color.Primary" Size="Size.Large" FullWidth="true" Class="ml-4">EMAIL</MudButton>
+                </MudItem>
+                <MudItem Class="d-flex flex-row py-4">
+                        <MudIconButton href="https://www.github.com/ormoya" Icon="@Icons.Custom.Brands.GitHub" Color="Color.Tertiary" Variant="Variant.Filled" Edge="Edge.False" Class="d-flex justify-center"></MudIconButton>
+                        <MudIconButton href="https://www.linkedin.com/in/orlandomoya/" Icon="@Icons.Custom.Brands.LinkedIn" Variant="Variant.Filled" Color="Color.Tertiary" Edge="Edge.False" Class="d-flex justify-center ms-2"></MudIconButton>
+                        <MudIconButton href="github.com/ormoya" Icon="@Icons.Custom.Brands.Discord" Variant="Variant.Filled" Color="Color.Tertiary" Edge="Edge.False" Class="d-flex justify-center ms-2"></MudIconButton>
+                </MudItem>
+                 @*<MudGrid Spacing="2" Class="pt-8">
+                        <MudItem>
+                        </MudItem>
+                        <MudItem>
+                        </MudItem>
+                 </MudGrid>*@
+            </MudItem>
+
+            <MudHidden Breakpoint="Breakpoint.MdAndDown" >
+                    <MudItem lg="4" Class="d-flex">
+                        <MudImage Elevation="3" Src="images/Orlando.png" Alt="Picture of Orlando" Class="rounded-pill mt-16" Width="400" />
+                    </MudItem>
+            </MudHidden>
+            
+        </MudGrid>
+        @*<MudGrid>
+            <MudItem xl="6" xs="12">
+                <MudImage Src="/images/date.jpg" ObjectFit="ObjectFit.Contain" Width="300"></MudImage>
+            </MudItem>
+            <MudItem xl="6" xs="12">
+                <MudText Class="pt-16" style="font-weight: bold;" Typo="Typo.h3" Color="Color.Primary" GutterBottom="true">Hey, I'm Software</MudText>
+                <MudText Class="mb-2" style="font-weight: bold;" Typo="Typo.h6" Color="Color.Primary">A full stack software developer</MudText>*@
+                    @*<MudText Class="mb-8" Color="Color.Primary">A full stack software developer</MudText>*@
+                @*<MudAlert Severity="Severity.Normal">You can find documentation and examples on our website here: <MudLink Href="https://mudblazor.com" Typo="Typo.body2" Color="Color.Inherit"><b>www.mudblazor.com</b></MudLink></MudAlert>
+            </MudItem>
+
+        </MudGrid>*@
+    </MudContainer>
+</section>
+
+@*<section class="section-about-me">
+    <MudContainer>
+        <MudText>
+            Hello! My name is Orlando Moya. I graduated from California State Polytechnic University, Pomona with a Bachelor of Science in Computer Engineering.
+
+            I served CPP Robotics Club as the requisitions officer during the 2019-2020 academic year. As an upperclassman, I helped organized workshops and creative engineering projects with fellow students. Additionally, I was responsible for storing and cataloging materials belonging to the club.
+
+            Along with these duties, I collaborated with fellow club members on several projects: the Hotdog Bot (an engineering exercise with the intent to practice and implement several automation concepts), and the Soccer Bot, which was tested against other bots in a fun and fierce competition held at the school.
+
+            Some of my interests and hobbies are 3D printing, DIY engineering projects, reading, basketball, and video games.
+        </MudText>
+    </MudContainer>
+</section>*@
+
+<section class="section-pitch">
+    <MudContainer  style="height: 100%;" MaxWidth=_containerWidth Class="d-flex justify-center align-content-center">
+        
+        <div style="top: 50%; display:flex; flex-direction:column;">
+            <Pitch></Pitch>
+        </div>
+
+    </MudContainer>
+</section>
+
+<section class="section-project">
+    <MudContainer Style="height: 100%;" MaxWidth=_containerWidth>
+        <MudText Class="pt-16" Align="Align.Center" Typo="Typo.h2">My Projects</MudText>
+        <MudText Class="pb-5" Align="Align.Center" Typo="Typo.body1">Here are a few of my personal projects. Want to see more? Please check out my <MudLink Href="github.com/ormoya"
+        Typo="Typo.body1" Underline="Underline.None">GitHub</MudLink>.
+        </MudText>
+        <Projects></Projects>
+    </MudContainer>
+</section>
+
+<section class="section-resume">
+    <MudContainer Style="height: 100%;" MaxWidth=_containerWidth Class="py-16">
+        <MudText Class="pt-16" Align="Align.Center" Typo="Typo.h2">Timeline</MudText>
+        <MudText Class="pb-5" Align="Align.Center" Typo="Typo.body1">
+            Some of my work experience. Please download my <MudLink Href="github.com/ormoya"
+            Typo="Typo.body1" Underline="Underline.None">resume</MudLink>.
+        </MudText>
+        @*<Resume></Resume>*@
+        @*<MudText Typo="Typo.h4" Align="Align.Center">Experience</MudText>*@
+        
+            <TimelineResume></TimelineResume>
+
+        
+
+        <MudText Typo="Typo.h4" Align="Align.Center" Class="">Skills</MudText>
+        <MudContainer MaxWidth="MaxWidth.ExtraSmall">
+            <Skills></Skills>
+        </MudContainer>
+            
+           
+
+    </MudContainer>
+</section>
+
+<section>
+    <MudContainer Style="height: 100%;" MaxWidth=_smallerContainerWidth Class="py-16">
+        <MudText Class="pt-16" Align="Align.Center" Typo="Typo.h2">Contact</MudText>
+        <ContactForm></ContactForm>
+    </MudContainer>
+</section>
+
+<section class="section-footer">
+    <Footer></Footer>
+</section>
+
+@code
+{
+    static MaxWidth _containerWidth = MaxWidth.Large;
+    MaxWidth _smallerContainerWidth = _containerWidth + 1;
+
+    [CascadingParameter]
+    protected MudTheme _theme { get; set; }
+
+}
